@@ -176,8 +176,8 @@ function init(){
 
 			onClick : function(nodeOrEdge, eventInfo, e) {
 
-				if (!nodeOrEdge) {  
-				return alert("Click on node or edge only"); }
+				//if (!nodeOrEdge) {  
+				//return alert("Click on node or edge only"); }
 				if (eventInfo.getEdge()) {
 				   alert(" Edge clicked");
 				}
