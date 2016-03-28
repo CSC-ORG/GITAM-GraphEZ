@@ -141,7 +141,19 @@ function init(){
            name: "Database Developer",
            data: {info: "Job description for database developer"},
 		   
-           children: []
+           children: [{
+                id: "node204",
+                name: "Database Handler",
+                data: {info: "Job description for database handler"},
+				
+                children: []
+            },{
+                id: "node205",
+                name: "Data Tester",
+                data: {info: "Job description for data tester"},
+				
+                children: []
+}]
        }
            ]};
     //end
