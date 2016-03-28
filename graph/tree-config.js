@@ -63,19 +63,19 @@ function init(){
                     children: [{
                         id: "node401",
                         name: "solution Architect",
-                        data: {},
-						info: "Job description for programmer analyst",
+                        data: {info: "Job description for programmer analyst"},
+						
                         children: [{
                             id: "node501",
                             name: "Information system Architect",
-                            data: {},
-							info: "Job description for programmer analyst",
+                            data: {info: "Job description for programmer analyst"},
+							
                             children: []
                         },{
                             id: "node502",
                             name: "Information Security Architect",
-                            data: {},
-							info: "Job description for programmer analyst",
+                            data: {info: "Job description for programmer analyst"},
+							
                             children: []
                         }
                         ]
@@ -86,52 +86,52 @@ function init(){
         }, {
             id: "node104",
             name: "Application Developer",
-            data: {},
-			info: "Job description for application developer",
+            data: {info: "Job description for application developer"},
+			
             children: []
        }, {
             id: "node105",
             name: "Application Engineer",
-            data: {},
-			info: "Job description for application engineer",
+            data: {info: "Job description for application engineer"},
+			
             children: []
        },{
            id: "node106",
            name: "Business Analyst",
-           data: {},
-		   info: "Job description for business analyst",
+           data: {info: "Job description for business analyst"},
+		   
            children: [{
             id: "node202",
             name: "Business Architect",
-            data: {},
-			info: "Job description for business architect",
+            data: {info: "Job description for business architect"},
+			
             children: []
            }]
        },{
           id: "node107",
           name: "Database Administrator",
-          data: {},
-		  info: "Job description for database administrator",
+          data: {info: "Job description for database administrator"},
+		  
           children: [{
             id: "node203",
             name: "Database Consultant",
-            data: {},
+            data: {info: "Job description for database Consultant"},
             children: [{
                 id: "node303",
                 name: "Database Designer",
-                data: {},
-				info: "Job description for database designer",
+                data: {info: "Job description for database designer"},
+				
                 children: []
             },{
                 id: "node304",
                 name: "Data Warehousing Designer",
-                data: {},
-				info: "Job description for data warehousing designer",
+                data: {info: "Job description for data warehousing designer"},
+				
                 children: [{
                     id:"node402",
                     name: "Data Modeler",
-                    data: {},
-					info: "Job description for data modeler",
+                    data: {info: "Job description for data modeler"},
+					
                     children: []
                 }]
             }]
@@ -139,8 +139,8 @@ function init(){
        },{
            id: "node108",
            name: "Database Developer",
-           data: {},
-		   info: "Job description for database developer",
+           data: {info: "Job description for database developer"},
+		   
            children: []
        }
            ]};
