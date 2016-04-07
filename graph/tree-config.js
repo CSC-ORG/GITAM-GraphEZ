@@ -86,7 +86,7 @@ function init(){
         }, {
             id: "node104",
             name: "Research",
-            data: {info: "Job description for application developer"},
+            data: {info: "Description for researches"},
 			
             children: []
        }, {
