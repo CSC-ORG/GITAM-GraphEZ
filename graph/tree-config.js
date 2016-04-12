@@ -180,7 +180,14 @@ function init(){
 				//if (!nodeOrEdge) {  
 				//return alert("Click on node or edge only"); }
 				if (eventInfo.getEdge()) {
-				   alert(" Edge clicked");
+				   $('Edge clicked').notifyModal({
+duration : 2500,
+placement : 'center',
+overlay : true,
+type : 'notify',
+onClose : function() {}
+});
+
 				}
 			},
 			onMouseEnter: function(node, eventInfo, e) {  
