@@ -26,55 +26,56 @@ var Log = {
 };
 
 
-
 function init(){
     //init data
     var json = {
         id: "node00",
-        name: "Technical intern",
-        data: {info: "Job description for technical intern"},
+        name: "GITAM University",
+        data: {info: "Information regarding the university"},
         children: [{
             id: "node101",
-            name: "Programmer Analyst",
-            data: {info: "Job description for programmer analyst"},
+            name: "About GU",
+            data: {info: "About GITAM University- Accreditation"},
             children: []
         }, {
             id: "node102",
-            name: "System Programmer analyst",
-            data: {info: "Job description for system programmer analyst"},
+            name: "Admissions",
+            data: {info: "Description of programs related to various streams-PG,UG"},
+            
             children: []
         }, {
             id: "node103",
-            name: "Software Engineer",
-            data: {info: "Job description for system programmer analyst"},
+            name: "Academics",
+            data: {info: "Academic description"},
             children: [{
                 id: "node201",
-                name: "Application Designer",
-                data: {info: "Job description for system programmer analyst"},
+                name: "Campus",
+                data: {info: "description of campus"},
+                data: {edgeText: "someText"},
                 children: [{
                     id: "node301",
-                    name: "Application architect",
-                    data: {info: "Job description for system programmer analyst"},
+                    name: "vizag campus",
+                    data: {info: "description of vizag campus"},
                     children: []
                 },{
                     id: "node302",
-                    name: "solution Analyst",
-                    data: {info: "Job description for system programmer analyst"},
+                    name: "Hyderabad campus",
+                    data: {info: "description of hyderabad campus"},
                     children: [{
                         id: "node401",
-                        name: "solution Architect",
-                        data: {info: "Job description for programmer analyst"},
+                        name: "GITAM institutions",
+                        data: {info: "description for institutions of GITAM"},
 						
                         children: [{
                             id: "node501",
-                            name: "Information system Architect",
-                            data: {info: "Job description for programmer analyst"},
+                            name: "School of technology",
+                            data: {info: "Courses description"},
 							
                             children: []
                         },{
                             id: "node502",
-                            name: "Information Security Architect",
-                            data: {info: "Job description for programmer analyst"},
+                            name: "Business School",
+                            data: {info: "MBA"},
 							
                             children: []
                         }
@@ -85,52 +86,52 @@ function init(){
 
         }, {
             id: "node104",
-            name: "Application Developer",
-            data: {info: "Job description for application developer"},
+            name: "Research",
+            data: {info: "Description about Research"},
 			
             children: []
        }, {
             id: "node105",
-            name: "Application Engineer",
-            data: {info: "Job description for application engineer"},
+            name: "Resources",
+            data: {info: "Description for Research labs"},
 			
             children: []
        },{
            id: "node106",
-           name: "Business Analyst",
-           data: {info: "Job description for business analyst"},
+           name: "Industry",
+           data: {info: "Description for collaborative programs"},
 		   
            children: [{
             id: "node202",
-            name: "Business Architect",
-            data: {info: "Job description for business architect"},
+            name: "Placements",
+            data: {info: "Description for placements"},
 			
             children: []
            }]
        },{
           id: "node107",
-          name: "Database Administrator",
-          data: {info: "Job description for database administrator"},
+          name: "Campus Life",
+          data: {info: "Student activity center"},
 		  
           children: [{
             id: "node203",
-            name: "Database Consultant",
-            data: {info: "Job description for database Consultant"},
+            name: "Student Activity",
+            data: {info: "academic information"},
             children: [{
                 id: "node303",
-                name: "Database Designer",
-                data: {info: "Job description for database designer"},
+                name: "Portal",
+                data: {info: "student and parent portals"},
 				
                 children: []
             },{
                 id: "node304",
-                name: "Data Warehousing Designer",
-                data: {info: "Job description for data warehousing designer"},
+                name: "XLearn",
+                data: {info: "Student academic info"},
 				
                 children: [{
                     id:"node402",
-                    name: "Data Modeler",
-                    data: {info: "Job description for data modeler"},
+                    name: "Student login",
+                    data: {info: "login for portals and xlearn"},
 					
                     children: []
                 }]
@@ -138,19 +139,19 @@ function init(){
           }]
        },{
            id: "node108",
-           name: "Database Developer",
-           data: {info: "Job description for database developer"},
+           name: "Fees",
+           data: {info: "Fees structure"},
 		   
            children: [{
                 id: "node204",
-                name: "Database Handler",
-                data: {info: "Job description for database handler"},
+                name: "Exam fees",
+                data: {info: "Exam fees information"},
 				
                 children: []
             },{
                 id: "node205",
-                name: "Data Tester",
-                data: {info: "Job description for data tester"},
+                name: "tuition Fees",
+                data: {info: "yearly fee structure info"},
 				
                 children: []
 }]
