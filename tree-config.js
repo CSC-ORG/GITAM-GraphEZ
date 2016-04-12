@@ -89,7 +89,7 @@ function init(){
         }, {
             id: "node104",
             name: "Research",
-            data: {info: "Job description for application developer"},
+            data: {info: "Description about Research"},
 			
             children: []
        }, {
@@ -172,6 +172,26 @@ function init(){
         //set distance between node and its children
         levelDistance: 50,
         //enable panning
+Events: {
+			//enableForEdges: true
+			enable : true,
+			enableForEdges : true,
+
+			onClick : function(nodeOrEdge, eventInfo, e) {
+
+				//if (!nodeOrEdge) {  
+				//return alert("Click on node or edge only"); }
+				if (eventInfo.getEdge()) {
+				   alert(" Edge clicked");
+				}
+			},
+			onMouseEnter: function(node, eventInfo, e) {  
+				viz.canvas.getElement().style.cursor = 'pointer';  
+			},  
+			onMouseLeave: function(node, eventInfo, e) {  
+				viz.canvas.getElement().style.cursor = '';  
+			},
+		},
         Navigation: {
           enable:true,
           panning:true
@@ -213,6 +233,24 @@ function init(){
                 st.setRoot(node.id, 'animate');
             	}
             };
+label.onclick = function(){
+				
+				$(this).popModal({
+					html : node.data.info,
+					placement : 'bottomLeft',
+					showCloseBut : true,
+					onDocumentClickClose : true,
+					onDocumentClickClosePrevent : '',
+					overflowContent : false,
+					inline : true,
+					asMenu : false,
+					beforeLoadingContent : 'Please, wait...',
+					onOkBut : function() {},
+					onCancelBut : function() {},
+					onLoad : function() {},
+					onClose : function() {}
+				});
+			};
             //set label styles
             var style = label.style;
             style.width = 60 + 'px';
