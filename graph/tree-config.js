@@ -215,22 +215,22 @@ onClose : function() {}
         },
         
         Edge: {
-            //type: 'bezier',
+           // type: 'bezier',
 			//type: 'line',  
 			//type: 'hyperline',
 			type: 'arrow',
 			lineWidth: 2,
             overridable: true,
-            color: 'red',
+            color: 'blue',
 			epsilon : 7
         },
         
         onBeforeCompute: function(node){
-            //Log.write("loading " + node.name);
+            Log.write("loading " + node.name);
         },
         
         onAfterCompute: function(){
-            //Log.write("done");
+            Log.write("done");
         },
         
         //This method is called on DOM label creation.
@@ -311,6 +311,7 @@ onClose : function() {}
             if (adj.nodeFrom.selected && adj.nodeTo.selected) {
                 adj.data.$color = "#99CC66";
                 adj.data.$lineWidth = 3;
+
             }
             else {
                 delete adj.data.$color;
